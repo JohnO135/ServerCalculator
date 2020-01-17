@@ -1,12 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
-  color: white;
-  text-shadow: 3px 3px 3px black;
-}
-
-h2 {
-  font-family: cursive;
 }
 
 body {
@@ -15,12 +9,36 @@ body {
   background: linear-gradient(to right, #043f5c, #013a19);
 }
 
-div {
+.intro-text {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  margin: 0px 30px;
+  color: white;
+  text-shadow: 3px 3px 3px black;
 }
 
 .time-input {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+label {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  background: green;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
 }
