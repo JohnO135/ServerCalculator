@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+h2 {
+  font-family: cursive;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #043f5c, #013a19);
+}
+
+div {
+  align-items: center;
+}
+
+.time-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

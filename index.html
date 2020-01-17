@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Server Tip Calculator</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <script src="index.js"></script>
   </head>
   <body>
-    <h2>Hello! Curious how much you made today?</h2>
-    <h3>
-      Enter in the following and I'll calculate exactly how much you made today
-      Net Income!
-    </h3>
-
-    <form></form>
+      <div>
+        <h2>Hello! Curious how much you made today?</h2>
+        <h3>
+            Enter in the following and I'll calculate exactly how much you made today
+            Net Income!
+        </h3>
+        <h4>
+            (Note: That this is based off the new $13/hr Minimum wage approximating
+            tax at about %17 percent)
+        </h4>
+      </div>
+<div class="input-section">
+    <form name="time-input" class="time-input">
+      <label for="hours">Please enter only full hours worked:</label>
+      <input type="text" name="hours" id="hours"></input>
+      <label for="minutes">Please enter minutes:</label>
+      <input type="text" name="minutes" id="minutes"></input>
+      <label for="result">Net Income for today: $</label>
+      <input type="text" name="result" id="result"></input>
+      <button type="submit">calculate</button>
+    </form>
+</div>
+    
   </body>
 </html>
