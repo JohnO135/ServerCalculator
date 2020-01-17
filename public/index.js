@@ -15,3 +15,14 @@ calculate = () => {
 
   document.getElementById("result").value = hours;
 };
+
+const handleHashChange = async () => {
+  const hash = document.location.hash;
+
+  firebase
+    .analytics()
+    .logEvent("screen_view", { screen_name: hash.substring(1) });
+};
+
+handleHashChange();
+window.addEventListener("hashchange", handleHashChange);

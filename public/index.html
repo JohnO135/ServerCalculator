@@ -7,6 +7,31 @@
     <title>Server Tip Calculator</title>
     <link rel="stylesheet" href="./index.css" />
     <script src="index.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAUKmUkpG7V3S3vsJp-YHTMTcd-azKav00",
+    authDomain: "servercalculator.firebaseapp.com",
+    databaseURL: "https://servercalculator.firebaseio.com",
+    projectId: "servercalculator",
+    storageBucket: "servercalculator.appspot.com",
+    messagingSenderId: "845799499885",
+    appId: "1:845799499885:web:f14c2e30566a04e94eb764",
+    measurementId: "G-7N7T2PF3HF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </head>
   <body>
       <div class="intro-text">
