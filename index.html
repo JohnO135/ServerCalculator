@@ -5,16 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Server Tip Calculator</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <script src="index.js"></script>
   </head>
   <body>
-    <h2>Hello! Curious how much you made today?</h2>
-    <h3>
-      Enter in the following and I'll calculate exactly how much you made today
-      Net Income!
-    </h3>
+      <div class="intro-text">
+        <h2>Curious how much you made today?</h2>
+        <h3>
+            Enter in the following and I'll calculate exactly how much you made today
+            Net Income!
+        </h3>
+        <h4>
+            (Note: That this is based off the new $13/hr Minimum wage approximating
+            tax at about %17 percent)
+        </h4>
 
-    <form></form>
+        <h5>(P.S. If any other money happens to come your way today outside of this just add it to your result for todays TRUE income ;) Happy Calculating and may you never get stuck in Patio )</h5>
+      </div>
+<div class="input-section">
+      <label for="hours">Please enter only full hours worked (Example: 5:)</label>
+      <input type="text" name="hours" id="hours"></input>
+      <label for="minutes">Please enter minutes: (Example: 57)</label>
+      <input type="text" name="minutes" id="minutes"></input>
+      <label for="Tip">Tip: (Only Dollars Amounts)</label>
+      <input type="text" name="tip" id="tip"></input>
+<br>
+      <label for="result">Net Income for Today: $</label>
+      <input type="text" name="result" id="result" placeholder="Your result will appear here.."></input>
+      <button onclick=calculate()>Calculate</button>
+</div>
+    
   </body>
 </html>

@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #043f5c, #013a19);
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 30px;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  background: green;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
+}
