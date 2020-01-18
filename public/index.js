@@ -13,6 +13,8 @@ calculate = () => {
   //Removes approximate 17% tax
   hours *= 0.83;
 
+  hours = Math.round(hours * 100) / 100;
+
   document.getElementById("result").value = hours;
 };
 
